@@ -4,16 +4,23 @@
       <meta charset="UTF-8">
       <title>SprocketChat</title>
       <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+      <ul id="chat-messages"></ul>
+      <form id="chat-form" action="">
+        <div class="userbox">
+        <label for="user">User:</label>
+        <input type="text" id="user" />
+        </div>
+        <label for="chat">Chat:</label>
+        <input id="message" autocomplete="off" />
+        <button>Send</button>
+      </form>
+
+
+
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       <script src="/socket.io/socket.io.js"></script>
       <script src="/scripts/main.js"></script>
-    </head>
-    <body>
-      <div class="container">
-        <ul id="chat-messages"></ul>
-        <form action="">
-          <input id="messages" autocomplete="off" /><button>Send</button>
-        </form>
-      </div>
     </body>
   </html>
